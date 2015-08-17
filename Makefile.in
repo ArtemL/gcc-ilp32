@@ -71,8 +71,8 @@ objext = .o
 AR = @AR@
 AR_FLAGS = rc
 
-CC = @CC@ 
-CFLAGS = @CFLAGS@
+CC = /home/aluzyanin/tools/usr/bin/gcc
+CFLAGS = @CFLAGS@ -mabi=ilp32 -Xlinker -maarch64elf32
 RANLIB = @RANLIB@
 LN_S = @LN_S@
 
